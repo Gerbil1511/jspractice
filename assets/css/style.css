@@ -1,13 +1,37 @@
-
+/* assets/css/style.css */
 body {
-    background-color: lightseagreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
 }
 
-.close {
-    margin-left: 10px;
+#gameboard {
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    gap: 10px;
+}
+
+.card {
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
 
-.close:hover {
-    color: yellow;
+.card img {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.card.selected img,
+.card.matched img {
+    display: block;
 }

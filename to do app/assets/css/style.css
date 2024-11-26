@@ -1,0 +1,13 @@
+
+body {
+    background-color: lightseagreen;
+}
+
+.close {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: yellow;
+}
